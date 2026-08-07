@@ -191,6 +191,9 @@ function installDependency
     echo "Installing PyQt5..........................."
     sudo apt-get install -y python3-pyqt5
 
+    echo "Installing PyQt6..........................."
+    sudo apt-get install -y python3-pyqt6
+
     echo "Installing Matplotlib......................"
     sudo apt-get install -y python3-matplotlib
 
@@ -222,6 +225,9 @@ function installDependency
 
     echo "Installing PyQt5............."
     pip3 install PyQt5  
+
+    echo "Installing PyQt6............." 
+    pip3 install PyQt6
 }
 
 
