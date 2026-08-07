@@ -20,6 +20,9 @@
 #      REVISION: Sunday 30 March 2024 18:40
 #=============================================================================
 
+config_dir="$HOME/.esim"
+config_file="config.ini"
+
 # Function to detect Ubuntu version and full version string
 get_ubuntu_version() {
     VERSION_ID=$(grep "^VERSION_ID" /etc/os-release | cut -d '"' -f 2)
@@ -171,6 +174,9 @@ function installDependency {
     
     echo "Installing PyQt5..........................."
     sudo apt-get install -y python3-pyqt5
+
+    echo "Installing PyQt6..........................."
+    sudo apt-get install -y python3-pyqt6
     
     echo "Installing Matplotlib......................"
     sudo apt-get install -y python3-matplotlib
@@ -201,6 +207,9 @@ function installDependency {
 
     echo "Installing PyQt5............."
     pip3 install PyQt5  
+
+    echo "Installing PyQt6............." 
+    pip3 install PyQt6
 }
 
 
